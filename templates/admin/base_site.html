@@ -1,0 +1,39 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ 'CV app' }}{% endblock %}
+
+{% block extrastyle %}
+
+    <style>
+
+        #header {
+            background-color: #373737;
+        }
+
+        #branding h1, #branding h1 a:link, #branding h1 a:visited {
+            color: gray;
+        }
+
+        .module h2, .module caption, .inline-group h2 {
+            margin: 0;
+            padding: 8px;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: left;
+            background: #c8990d;
+            color: #373737;
+        }
+
+        div.breadcrumbs {
+            background: #3d3d3d;
+        }
+
+    </style>
+
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ 'CV app - WebApp' }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
